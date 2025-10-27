@@ -1,0 +1,108 @@
+*{
+    font-family: "Karla", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.container{
+    width: 50%;
+}
+p{
+    line-height: 1.5em;
+    font-size: 1.1rem;
+}
+.row1{
+    background-color: white;
+    padding: 2em;
+}
+.row1 h1{
+    color: hsl(179, 62%, 43%);
+    
+}
+.row1 p{
+    color: rgb(174, 174, 174);   
+}
+.row1 h2{
+    color: #BDDF32;
+    /* font-size:1.3rem; */
+}
+.row2{
+    display: flex;
+}
+.row2 .first-block{
+    background-color: hsl(179, 62%, 43%);
+    padding: 2em;
+    width: 50%;
+}
+.row2 .first-block h2{
+    margin: 0;
+    color: white;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.price h1{
+    color: white;
+}
+.first-block p{
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.664);
+}
+.price p{
+    color: rgba(255, 255, 255, 0.354);
+    margin: 0;
+}
+button{
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: .5em;
+    width: 100%;
+}
+.second-block{
+    background-color:hsl(179, 63%, 48%) ;
+    padding: 1em 2em;
+    width: 50%;
+}
+.second-block h2{
+    color: white;
+}
+.second-block p{
+    color: rgba(255, 255, 255, 0.71);
+    width: 70%;
+}
+button:hover{
+    cursor: pointer;
+}
+@media(max-width:790px){
+    body{
+        display: block;
+        height: 100%;
+        padding: 5em;
+    }
+    .container{
+        width: 100%;
+    }
+    .row2{
+        flex-direction: column;
+    }
+    .row2 .first-block{
+        width: 100%;
+    }
+    .row2 .second-block{
+        width: 100%;
+    }
+    
+}
